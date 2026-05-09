@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efe Kasap - Taze Et ve Ürünleri</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .about {
+            background: #f4f4f4;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border-left: 5px solid #DC143C;
+        }
+
+        .about h2 {
+            color: #8B0000;
+            margin-bottom: 1rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .product-card {
+            background: white;
+            border: 2px solid #FFD700;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+
+        .product-card h3 {
+            color: #8B0000;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: #DC143C;
+            font-weight: bold;
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #333 0%, #555 100%);
+            color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+            color: #FFD700;
+        }
+
+        .contact p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🥩 EFE KASAP 🥩</h1>
+        <p>Taze, Kaliteli Et ve Ürünleri</p>
+    </header>
+
+    <nav>
+        <a href="#anasayfa">Anasayfa</a>
+        <a href="#urunler">Ürünler</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <div class="container">
+        <section id="anasayfa" class="about">
+            <h2>Hoş Geldiniz!</h2>
+            <p>Efe Kasap olarak, size en taze ve kaliteli et ürünlerini sunmaktan gurur duyuyoruz. 20 yıldan fazla deneyimimizle, müşteri memnuniyeti her zaman bizim önceliğimizdir.</p>
+        </section>
+
+        <section id="urunler">
+            <h2 style="text-align: center; color: #8B0000; margin: 2rem 0;">Ürünlerimiz</h2>
+            <div class="products">
+                <div class="product-card">
+                    <h3>Bonfile</h3>
+                    <p>Premium kalite, sos için ideal</p>
+                    <p class="price">₺250/kg</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Pirzola</h3>
+                    <p>Izgarada pişirmek için mükemmel</p>
+                    <p class="price">₺280/kg</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Sucuk</h3>
+                    <p>Ev yapımı, taze sucuk</p>
+                    <p class="price">₺180/kg</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Pastırma</h3>
+                    <p>Geleneksel yöntemle hazırlanmış</p>
+                    <p class="price">₺320/kg</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Tavuk Göğsü</h3>
+                    <p>Sağlıklı ve besleyici</p>
+                    <p class="price">₺120/kg</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Köfte</h3>
+                    <p>Ev tarifesiyle yapılmış</p>
+                    <p class="price">₺200/kg</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hakkimizda" class="about">
+            <h2>Hakkımızda</h2>
+            <p>Efe Kasap, kalite ve tazlıkta taviz vermeyen bir işletmedir. Tüm ürünlerimiz hijyenik koşullarda hazırlanır ve en iyi standartlara göre sunulur. Müşteri memnuniyeti bizim başarı ölçütümüzdür.</p>
+        </section>
+
+        <section id="iletisim" class="contact">
+            <h2>İletişim Bilgileri</h2>
+            <p>📍 Adres: Merkez Mahallesi, Kasap Sokak No:15, Şehir</p>
+            <p>📞 Telefon: (555) 123-4567</p>
+            <p>📧 Email: info@efekasap.com</p>
+            <p>⏰ Çalışma Saatleri: Pazartesi - Cuma 08:00 - 20:00</p>
+            <p>⏰ Cumartesi - Pazar 09:00 - 18:00</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Efe Kasap. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
